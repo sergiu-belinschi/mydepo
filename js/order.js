@@ -153,8 +153,11 @@ $(".question").on("click", function () {
 // inputmask.js is only loaded on the landing pages; guard so the rest of this
 // file keeps running on /rights and /ru/rights (it used to throw there).
 if ($.fn.inputmask) {
+    // Target the phone field by name. A broader ".send_phone_number input"
+    // also matches the hidden Web3Forms fields in the same form, and the mask
+    // would overwrite the access key with a phone number.
     $(
-        ".send_phone_number input , .s-contacts-form .form-group.phone input"
+        ".send_phone_number input[name='phone'] , .s-contacts-form .form-group.phone input[name='phone']"
     ).inputmask({
         mask: "(+373) 99-999-999",
         // greedy: true,
