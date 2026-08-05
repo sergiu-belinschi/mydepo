@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://mydepo.md/</loc>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://mydepo.md/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://mydepo.md/ru/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://mydepo.md/"/>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://mydepo.md/ru/</loc>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://mydepo.md/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://mydepo.md/ru/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://mydepo.md/"/>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://mydepo.md/rights/</loc>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://mydepo.md/rights/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://mydepo.md/ru/rights/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://mydepo.md/rights/"/>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://mydepo.md/ru/rights/</loc>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://mydepo.md/rights/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://mydepo.md/ru/rights/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://mydepo.md/rights/"/>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+</urlset>
