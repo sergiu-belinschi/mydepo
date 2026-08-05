@@ -13,6 +13,15 @@ function validatePhone(phone) {
 // from_name live as hidden inputs in the HTML.
 var FORM_ENDPOINT = "https://api.web3forms.com/submit";
 
+// The input mask fills an untouched field with (+373) 00-000-000, which is not
+// an empty string, so a plain emptiness check would let it through and mail an
+// unusable lead. Require real digits after the country code.
+function phoneIsFilled(value) {
+    var digits = String(value).replace(/\D/g, "");
+    var local = digits.indexOf("373") === 0 ? digits.slice(3) : digits;
+    return local.length >= 8 && !/^0+$/.test(local);
+}
+
 function submitForm($form, requiredFields, onSuccess, onError) {
     var form = $form[0];
 
@@ -21,6 +30,9 @@ function submitForm($form, requiredFields, onSuccess, onError) {
         var el = form.elements[name];
         if (!el) {
             return true;
+        }
+        if (name === "phone") {
+            return !phoneIsFilled(el.value);
         }
         return String(el.value).replace(/[^0-9A-Za-zА-Яа-яЁёĂÂÎȘȚăâîșț]/g, "").length === 0;
     });
