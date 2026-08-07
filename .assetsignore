@@ -4,8 +4,6 @@ wrangler.jsonc
 # along with the site unless it is excluded
 **/.wrangler
 README.md
-CNAME
-.nojekyll
 .gitignore
 .gitattributes
 **/.git
