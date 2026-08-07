@@ -1,0 +1,13 @@
+{
+  // Static-assets-only Worker: no `main`, so no `assets.binding` either.
+  // Files are served straight from the repository root.
+  "name": "mydepo",
+  "compatibility_date": "2026-08-07",
+  "assets": {
+    "directory": "./",
+    // Serve 404.html for unknown paths. Directory index handling and the
+    // /ru -> /ru/ redirect come from the default html_handling
+    // ("auto-trailing-slash"), which is what this site's URLs rely on.
+    "not_found_handling": "404-page"
+  }
+}

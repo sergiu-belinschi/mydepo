@@ -1,0 +1,11 @@
+wrangler.jsonc
+.assetsignore
+README.md
+CNAME
+.nojekyll
+.gitignore
+.gitattributes
+**/.git
+**/node_modules
+**/.DS_Store
+**/Thumbs.db
