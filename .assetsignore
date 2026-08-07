@@ -1,5 +1,8 @@
 wrangler.jsonc
 .assetsignore
+# wrangler writes a scratch worker here while deploying and then uploads it
+# along with the site unless it is excluded
+**/.wrangler
 README.md
 CNAME
 .nojekyll
