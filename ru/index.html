@@ -30,20 +30,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PF0R143FH2"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-PF0R143FH2');
-    </script>
-
     <link rel="canonical" href="https://mydepo.md/ru/"/>
     <link rel="alternate" hreflang="ro" href="https://mydepo.md/"/>
     <link rel="alternate" hreflang="ru" href="https://mydepo.md/ru/"/>
     <link rel="alternate" hreflang="x-default" href="https://mydepo.md/"/>
     <meta property="og:locale" content="ru_RU"/>
+    <script src="/js/consent.js" defer></script>
 </head>
 <body>
 
@@ -109,9 +101,8 @@
 
                     <input type="text" name="phone" required placeholder="(+373) 00-000-000">
                     <button>Рассчитать стоимость</button>
-                    <span class="rights">Нажимая кнопку «Рассчитать стоимость», вы соглашаетесь с  <a
-                            href="/ru/rights/" target="_blank">правилами</a>
-                        </span>
+                    <span class="rights">Нажимая кнопку «Рассчитать стоимость», вы соглашаетесь на обработку персональных данных по <a
+                            href="/ru/privacy/" target="_blank">Политике конфиденциальности</a>.</span>
                 </form>
                 <div class="message">
                     <span class="success">Ваше сообщение было отправлено успешно!</span>
@@ -287,12 +278,12 @@
         <h2 class="title">Наши тарифы и условия</h2>
         <h5>Минимальный срок хранения <span>1 день</span></h5>
         <div class="discount  container_wrap">
-            <p><span>Оплачивайте «myDEPO» вперёд и получайте бесплатные месяцы хранения</span></p>
+            <p><span>Оплачивайте «myDEPO» вперёд и получайте скидку на хранение</span></p>
             <div class="discount_period">
                 <span> При предоплате за 6 месяцев <span>скидка 5% на оплаченный период</span></span>
             </div>
             <div class="discount_period">
-                <span> При предоплате за 12 месяцевe <span>скидка 10% на оплаченный период</span></span>
+                <span> При предоплате за 12 месяцев <span>скидка 10% на оплаченный период</span></span>
             </div>
             <div class="discount_period">
                 <span>При предоплате за 18 месяцев <span>скидка 15% на оплаченный период</span> </span>
@@ -551,7 +542,7 @@
                 <ul>
                     <li>Используем 15 видов упаковочных материалов, чтобы гарантировать сохранность</li>
                     <li>Наши сотрудники обучаются упаковке и перевозке и обращаются с вещами аккуратно</li>
-                    <li>Несём материальную ответственность за вещи</li>
+                    <li>Несём материальную ответственность за вещи в пределах, указанных в <a href="/ru/rights/">Правилах</a></li>
                 </ul>
             </div>
             <div class="right_content">
@@ -610,7 +601,7 @@
                                        for="">Дата</label>
                                 <div class="icon_date">
                                     <input class="form-control datepicker " type="text" name="date" min="2021-06-01"
-                                           placeholder="17-12-2021"/>
+                                           placeholder="дд-мм-гггг"/>
                                 </div>
                             </div>
                         </div>
@@ -631,6 +622,7 @@
                             </button>
                         </div>
                     </div>
+                    <span class="form-consent">Нажимая «Отправить», вы соглашаетесь на обработку персональных данных по <a href="/ru/privacy/" target="_blank">Политике конфиденциальности</a>.</span>
                     <span class="message-success">Ваше сообщение было отправлено успешно!</span>
                     <span class="message-erorr">Произошла ошибка, проверьте все поля</span>
                 </form>
@@ -663,7 +655,7 @@
             <div class="single_question">
                 <div class="question">Где хранятся вещи</div>
                 <div class="answer">
-                    <p> myDEPO — это складское хранение вещей. Хотя нам нравится называть его облачным. Пока шины или кровать нельзя отправить на сервер архивом. Они едут на склад. Там коробки фотографируют. Снимки отправляют в личный кабинет клиента. Каждую вещь — на паллету клиента и на стеллаж. Вы больше не спотыкаетесь о них, но сохраняете полный доступ. Удалённый — через сайт и приложение. Хранение на myDepo безопасно. У нас охраняемый складской комплекс категории А. Круглосуточное видеонаблюдение, постоянная температура и клининг дважды в неделю. А ещё проветривание и внимательный персонал.</p>
+                    <p> myDEPO — это складское хранение вещей. Хотя нам нравится называть его облачным. Пока шины или кровать нельзя отправить на сервер архивом. Они едут на склад. При приёмке мы фотографируем вещи и по запросу отправляем снимки по e-mail или в мессенджер. Каждую вещь — на паллету клиента и на стеллаж. Вы больше не спотыкаетесь о них и можете в любой момент заказать возврат всех вещей или их части. Хранение на myDepo безопасно. У нас охраняемый складской комплекс категории А. Круглосуточное видеонаблюдение, постоянная температура и клининг дважды в неделю. А ещё проветривание и внимательный персонал.</p>
                 </div>
             </div>
             <div class="single_question">
@@ -708,7 +700,8 @@
                 <li><a href="#storage">Хранение</a></li>
                 <li><a href="#prices">Тарифы</a></li>
                 <li><a href="#safe_storage">Склад</a></li>
-                <li><a href="/ru/rights/" target="_blank">Правовые документы</a></li>
+                <li><a href="/ru/rights/">Правила оказания услуг</a></li>
+                <li><a href="/ru/privacy/">Политика конфиденциальности</a></li>
             </ul>
 
             <div class="language">
@@ -762,8 +755,9 @@
                     alt="">
             </a>
         </div>
+        <div class="legal-info">«AgroOpt» SRL · IDNO 1010600033158 · юр. адрес: мун. Кишинёв, ул. Лакулуй 39 · склад: ул. Петриканская 19/5<br><a href="#cookies" data-cookie-settings>Настройки cookies</a></div>
         <div class="copyright">
-            <span> DEPO © 2026. Использование материалов запрещено без письменного согласия.</span>
+            <span>myDEPO © 2026 «AgroOpt» SRL. Использование материалов запрещено без письменного согласия.</span>
         </div>
     </div>
     <div class="call_to_action">

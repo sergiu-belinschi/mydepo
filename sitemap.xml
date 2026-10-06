@@ -33,4 +33,20 @@
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
+    <url>
+        <loc>https://mydepo.md/privacy/</loc>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://mydepo.md/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://mydepo.md/ru/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://mydepo.md/privacy/"/>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://mydepo.md/ru/privacy/</loc>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://mydepo.md/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://mydepo.md/ru/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://mydepo.md/privacy/"/>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
 </urlset>

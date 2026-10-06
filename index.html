@@ -30,20 +30,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PF0R143FH2"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-PF0R143FH2');
-    </script>
-
     <link rel="canonical" href="https://mydepo.md/"/>
     <link rel="alternate" hreflang="ro" href="https://mydepo.md/"/>
     <link rel="alternate" hreflang="ru" href="https://mydepo.md/ru/"/>
     <link rel="alternate" hreflang="x-default" href="https://mydepo.md/"/>
     <meta property="og:locale" content="ro_MD"/>
+    <script src="/js/consent.js" defer></script>
 </head>
 <body>
 
@@ -109,9 +101,8 @@
 
                     <input type="text" name="phone" required placeholder="(+373) 00-000-000">
                     <button>Calculează suma</button>
-                    <span class="rights">Apăsând butonul ”Calculează suma”, acceptați termenii și  <a
-                            href="/rights/" target="_blank">condițiile</a>
-                        noastre</span>
+                    <span class="rights">Apăsând butonul ”Calculează suma”, sunteți de acord cu prelucrarea datelor personale conform <a
+                            href="/privacy/" target="_blank">Politicii de confidențialitate</a>.</span>
                 </form>
                 <div class="message">
                     <span class="success">Mesajul Dvs. a fost expediat cu succes!</span>
@@ -287,7 +278,7 @@
         <h2 class="title">Prețurile și serviciile noastre</h2>
         <h5>Perioada minimă de depozitare <span>1 zi</span></h5>
         <div class="discount  container_wrap">
-            <p><span>Achită pentru serviciile myDEPO în avans și primește gratuit o lună de depozitare.</span></p>
+            <p><span>Achită pentru serviciile myDEPO în avans și primește reducere la depozitare.</span></p>
             <div class="discount_period">
                 <span> La achitarea în avans pentru 6 luni <span>reducere 5% pentru perioada achitată</span></span>
             </div>
@@ -551,7 +542,7 @@
                 <ul>
                     <li>Folosim 15 tipuri de materiale pentru împachetare, pentru a asigura securitatea</li>
                     <li> Lucrătorii noștri sunt instruiți să împacheteze lucrurile calitativ, conform normelor prevăzute de standardele interne, și să manipuleze cu lucrurile voastre, cu multă atenție și grijă</li>
-                    <li>Purtăm răspundere materială pentru lucrurile voastre</li>
+                    <li>Purtăm răspundere materială pentru lucrurile voastre, în limitele din <a href="/rights/">Termeni și condiții</a></li>
                 </ul>
             </div>
             <div class="right_content">
@@ -610,7 +601,7 @@
                                        for="">Data</label>
                                 <div class="icon_date">
                                     <input class="form-control datepicker " type="text" name="date" min="2021-06-01"
-                                           placeholder="17-12-2021"/>
+                                           placeholder="zz-ll-aaaa"/>
                                 </div>
                             </div>
                         </div>
@@ -631,6 +622,7 @@
                             </button>
                         </div>
                     </div>
+                    <span class="form-consent">Apăsând „Trimite”, sunteți de acord cu prelucrarea datelor personale conform <a href="/privacy/" target="_blank">Politicii de confidențialitate</a>.</span>
                     <span class="message-success">Mesajul Dvs. a fost expediat cu succes!</span>
                     <span class="message-erorr">Există o eroare, verificați vă rog toate câmpurile</span>
                 </form>
@@ -663,7 +655,7 @@ Suntem un serviciu de stocare ”în cloud”, unde lucrurile sunt stocate și p
             <div class="single_question">
                 <div class="question">Unde sunt stocate lucrurile</div>
                 <div class="answer">
-                    <p> myDEPO - este un depozit de păstrare a lucrurilor. Totuși, ne place să-l numim cloud. Atât timp cât anvelopele și dormitorul nu pot fi arhivate pe un server, acestea sunt transmise la depozitul myDEPO. Tot acolo se fac câteva poze pentru a fi expediate în cabinetul personal al clientului. Fiecare articol are locul său bine poziționat, având accesul deplin către ele. La distanță, prin acces web sau prin aplicație. Depozitarea la myDEPO este una sigură. Dispunem de un complex securizat de depozite de categoria A. Supraveghere video non-stop, un sistem de ventilare ce permite menținerea unei temperaturi constante, curățenie de două ori pe săptămână și personal amabil și calificat. </p>
+                    <p> myDEPO - este un depozit de păstrare a lucrurilor. Totuși, ne place să-l numim cloud. Atât timp cât anvelopele și dormitorul nu pot fi arhivate pe un server, acestea sunt transmise la depozitul myDEPO. La primire facem fotografii ale lucrurilor, iar la cerere vi le trimitem prin e-mail sau messenger. Fiecare client are spațiul său separat în depozit. Puteți primi înapoi oricând toate lucrurile sau doar o parte din ele. Depozitarea la myDEPO este una sigură. Dispunem de un complex securizat de depozite de categoria A. Supraveghere video non-stop, un sistem de ventilare ce permite menținerea unei temperaturi constante, curățenie de două ori pe săptămână și personal amabil și calificat. </p>
                 </div>
             </div>
             <div class="single_question">
@@ -710,7 +702,8 @@ Dimineața, în ziua predării lucrurilor Dvs., veți fi contactat(-ă) pentru a
                 <li><a href="#storage">Păstrare</a></li>
                 <li><a href="#prices">Tarife</a></li>
                 <li><a href="#safe_storage">Depozit</a></li>
-                <li><a href="/rights/" target="_blank">Termeni și Condiții</a></li>
+                <li><a href="/rights/">Termeni și condiții</a></li>
+                <li><a href="/privacy/">Politica de confidențialitate</a></li>
             </ul>
 
             <div class="language">
@@ -764,8 +757,9 @@ Dimineața, în ziua predării lucrurilor Dvs., veți fi contactat(-ă) pentru a
                     alt="">
             </a>
         </div>
+        <div class="legal-info">„AgroOpt” SRL · IDNO 1010600033158 · sediul: mun. Chișinău, str. Lacului 39 · depozit: str. Petricani 19/5<br><a href="#cookies" data-cookie-settings>Setări cookie</a></div>
         <div class="copyright">
-            <span> DEPO © 2026. Utilizarea materialelor este interzisă fără acordul scris.</span>
+            <span>myDEPO © 2026 „AgroOpt” SRL. Utilizarea materialelor este interzisă fără acordul scris.</span>
         </div>
     </div>
     <div class="call_to_action">

@@ -1596,3 +1596,117 @@ label {
       .call_to_action .options.option5 img {
         width: 50px;
         height: 50px; }
+
+/* Legal pages (rights, privacy) */
+.legal-doc {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 40px 15px 80px;
+  color: #383838;
+  font-size: 16px;
+  line-height: 1.55; }
+  .legal-doc h1 {
+    font-size: 30px;
+    line-height: 1.25;
+    color: #1C2F81;
+    margin: 0 0 8px; }
+  .legal-doc .legal-doc__edition {
+    color: #A7A7A7;
+    margin: 0 0 32px; }
+  .legal-doc h2 {
+    font-size: 21px;
+    line-height: 1.3;
+    color: #1C2F81;
+    margin: 32px 0 12px; }
+  .legal-doc p {
+    margin: 0 0 10px; }
+  .legal-doc ul {
+    margin: 0 0 12px 22px;
+    padding: 0; }
+    .legal-doc ul li {
+      list-style: disc;
+      margin-bottom: 4px; }
+  .legal-doc table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 0 16px; }
+    .legal-doc table th, .legal-doc table td {
+      border: 1px solid #E2E2EA;
+      padding: 8px 10px;
+      text-align: left;
+      vertical-align: top; }
+    .legal-doc table th {
+      background: #F7F7FC; }
+  .legal-doc a {
+    color: #1C2F81; }
+
+/* Consent note under the contact form */
+.form-consent {
+  display: block;
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 1.31;
+  color: rgba(27, 40, 51, 0.5); }
+  .form-consent a {
+    color: inherit;
+    text-decoration: underline; }
+
+/* Company details and legal links in the footer */
+footer .footer .legal-info {
+  width: 100%;
+  margin: 10px 0 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.6); }
+  footer .footer .legal-info a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: underline;
+    margin-right: 16px; }
+
+/* Cookie banner (js/consent.js) */
+.cookie-banner {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  max-width: 720px;
+  margin: 0 auto;
+  z-index: 100000;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 20px;
+  padding: 16px 20px;
+  background: #fff;
+  color: #383838;
+  border-radius: 8px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.18);
+  font-size: 14px;
+  line-height: 1.45; }
+  .cookie-banner__text {
+    flex: 1 1 320px;
+    margin: 0; }
+    .cookie-banner__text a {
+      color: #1C2F81; }
+  .cookie-banner__buttons {
+    display: flex;
+    gap: 10px; }
+  .cookie-banner__btn {
+    border: 1px solid #1C2F81;
+    border-radius: 4px;
+    padding: 9px 18px;
+    font-size: 14px;
+    cursor: pointer;
+    background: #fff;
+    color: #1C2F81; }
+  .cookie-banner__btn--accept {
+    background: #1C2F81;
+    color: #fff; }
+
+/* Legal pages have no section backgrounds of their own; without this a
+   dark-mode browser shows its dark canvas behind the text. */
+body.home-page {
+  background: #fff; }
+@media screen and (max-width: 768px) {
+  footer .footer .legal-info {
+    text-align: center; } }

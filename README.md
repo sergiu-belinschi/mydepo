@@ -17,10 +17,12 @@ index.html              →  https://mydepo.md/            (румынская �
 ru/index.html           →  https://mydepo.md/ru/          (русская версия)
 rights/index.html       →  https://mydepo.md/rights/      (правила, RO)
 ru/rights/index.html    →  https://mydepo.md/ru/rights/   (правила, RU)
+privacy/index.html      →  https://mydepo.md/privacy/     (политика конфиденциальности, RO)
+ru/privacy/index.html   →  https://mydepo.md/ru/privacy/  (политика конфиденциальности, RU)
 404.html                →  страница «не найдено»
 
 css/     стили          (app.css — основной, responsive.css, swiper.css, fonts.css)
-js/      скрипты        (order.js — формы и интерактив, common.func.js, libs/)
+js/      скрипты        (order.js — формы и интерактив, consent.js — баннер cookies, common.func.js, libs/)
 img/     картинки
 fonts/   шрифты
 sitemap.xml, robots.txt
@@ -49,6 +51,7 @@ Cloudflare следит за веткой `main`. Любой коммит зап
 |---|---|---|
 | Главная страница | `index.html` | `ru/index.html` |
 | Правила | `rights/index.html` | `ru/rights/index.html` |
+| Политика конфиденциальности | `privacy/index.html` | `ru/privacy/index.html` |
 
 Порядок: открыли файл на GitHub → карандаш (Edit) → поправили → Commit changes.
 Через 1–2 минуты изменения на сайте.
@@ -139,8 +142,16 @@ python -m http.server 8099
 
 ## Аналитика
 
-Google Analytics 4, идентификатор `G-PF0R143FH2`. Раньше стоял только на двух
-страницах из четырёх — теперь на всех.
+Google Analytics 4, идентификатор `G-PF0R143FH2`. Подключается только через
+`js/consent.js` и только после того, как посетитель нажал «Принять» в баннере
+cookies (Закон РМ 195/2024 о защите персональных данных). Выбор хранится в
+`localStorage`; ссылка «Setări cookie / Настройки cookies» в футере открывает
+баннер снова. Не вставляйте тег `gtag.js` прямо в `<head>` — так GA снова
+начнёт работать без согласия.
+
+Если на сайт добавляется новый сервис, который получает данные посетителей
+(форма, чат, пиксель), его нужно дописать в политику конфиденциальности,
+раздел 4.
 
 ## Что было исправлено при переносе
 
